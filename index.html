@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DictionaryWithTranslator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://cdn.icon-icons.com/icons2/152/PNG/128/dictionary_21800.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <center><h1 class="name">From ENG to RU</h1></center>
+    <div class="translateBox">
+      <textarea class="translateTo" placeholder="Введите текст..."></textarea>
+      <i class="fa fa-refresh" aria-hidden="true"></i>
+      <textarea readonly class="translateFrom"></textarea>
+    </div>
+    <div class="buttonBox">
+      <div class="wrapper">
+        <div class="icon1">
+          <button class="translateButton">Перевести</button>
+          <div style="position: relative; left: 340px; top: -35px">
+            <i
+              class="fa fa-clone clone1"
+              aria-hidden="true"
+              style="margin-right: 10px"
+            ></i>
+            <i class="fa fa-volume-up volume1" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="icon2">
+          <i
+            class="fa fa-volume-up volume2"
+            aria-hidden="true"
+            style="margin-right: 10px; position: relative; width: 20px"
+          ></i>
+          <i
+            class="fa fa-clone clone2"
+            aria-hidden="true"
+            style="margin-left: 10px"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="cardWrapper">
+      <div class="card">
+        <div class="scoreWrapper" style="margin-bottom: 130px">
+          <button class="score">0/20</button>
+        </div>
+        <div class="scoreWrapper" style="margin-top: 130px">
+          <button class="win">0/20</button>
+        </div>
+        <p class="words">Bottom</p>
+      </div>
+      <div class="buttonCard">
+        <button class="know">Знаю</button>
+        <button class="dknow">Не знаю</button>
+      </div>
+    </div>
+    <hr />
+    <center><div class="wrapperRepeat"></div></center>
+    <script type="text/javascript" src="vocab.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
