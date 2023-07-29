@@ -117,7 +117,6 @@ KnowButton.addEventListener("click", () => {
   //слебующее слово
   Words.innerHTML = randomValues[score];
   //
-  translatedToArea.focus();
   checkScore();
 });
 
